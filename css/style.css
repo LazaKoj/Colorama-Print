@@ -164,6 +164,13 @@ header {
     font-size: 18px;
 }
 
+.section-one .text-content h2,
+.section-two .text-content h2,
+.section-two .text-content h3 {
+    margin: 20px 0;
+}
+
+
 .site-footer {
     background-color: #111;
     color: white;
@@ -204,19 +211,17 @@ header {
         display: block; 
     }
 
-    .section-one, .section-two {
+    .section-one  {
         height: 750px;
+    }
+
+    .section-two {
+        height: 850px;
     }
 
     .section-one .text-content,
     .section-two .text-content {
         font-size: 20px;
         padding: 10px;
-    }
-
-    .section-one .text-content h2,
-    .section-two .text-content h2,
-    .section-two .text-content h3 {
-        margin: 20px 0;
     }
 }
