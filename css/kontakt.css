@@ -1,0 +1,96 @@
+/* Contact Section Styling */
+
+html, body {
+    height: 100%; /* Set the html and body height to 100% */
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation for fade-in and slight move up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Moves content 30px down */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Brings content to its original position */
+    }
+}
+
+.contact-title,
+.contact-info {
+    animation: fadeInUp 1.5s ease-out; /* Slight delay for text */
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.contact-section {
+    background-color: orange;
+    padding: 50px;
+    text-align: center;
+    min-height: 81.6vh; /* Ensure the contact section takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    box-sizing: border-box; 
+}
+
+.contact-title h2 {
+    font-size: 36px;
+    color: #333; 
+    font-weight: bold;
+}
+
+.contact-title h2 span {
+    color: #333; 
+}
+
+.contact-title p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.contact-item img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-item a {
+    color: #287BFF;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,172 @@
+body {
+    background-color: #f76b38;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: orange;
+    padding: 50px 20px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    color: #333;
+}
+
+.portfolio-grid, .image-row img{
+    animation: fadeInUp 1.5s ease-out; 
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Portfolio Grid Styling */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    padding: 40px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.portfolio-grid .portfolio-item {
+    position: relative;
+    overflow: hidden; 
+    border-radius: 5px;
+    background-color: #f8f8f8; 
+    width: 100%;
+    height: 250px; 
+    cursor: pointer;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+    display: block; 
+    z-index: 1; 
+}
+
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    opacity: 0;
+    z-index: 2; 
+    transition: opacity 0.5s ease; 
+}
+
+/* Show dark overlay on hover */
+.portfolio-item:hover::before {
+    opacity: 1; 
+}
+
+/* Zoom effect inside the image */
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Text overlay */
+.portfolio-item .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 16px; 
+    opacity: 0;
+    z-index: 3; 
+    transition: opacity 0.5s ease;
+}
+
+/* Show text overlay on hover */
+.portfolio-item:hover .text-overlay {
+    opacity: 1; 
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.image-row img {
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover; 
+    margin: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 80%; 
+        margin: 10px auto; 
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <!-- Upper part: logo on the left, "DIZAJN STUDIO" centered -->
+        <div class="upper-nav">
+            <div class="logo">
+                <img src="images/logocolorama.png" alt="Colorama Print Logo">
+            </div>
+            <div class="title">
+                <h1>DIZAJN STUDIO</h1>
+            </div>
+            <div class="social-icons">
+                <a href="https://instagram.com/colorama.print" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:coloramaprint.bg@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <!-- Phone icon linking to kontakt.html -->
+                <a href="kontakt.html#phone-section" class="social-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Lower part: navigation links with orange border -->
+        <div class="nav-bar">
+            <i class="fas fa-bars hamburger"></i> 
+            <nav class="nav-links">
+                <a href="index.html">O NAMA</a>
+                <a href="usluge.html">NAŠE USLUGE</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="kontakt.html">KONTAKT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h1>PORTFOLIO</h1>
+        <div class="portfolio-grid">
+            <!-- Portfolio 1 -->
+            <div class="portfolio-item" onclick="openModal(1)">
+                <img src="images/banerNANA/bilbord-min.jpg" alt="Portfolio 1">
+                <div class="text-overlay">Dizajn NANA</div>
+            </div>
+
+            <!-- Portfolio 2 -->
+            <div class="portfolio-item" onclick="openModal(2)">
+                <img src="images/MakiAca/cestitka.jpg" alt="Portfolio 2">
+                <div class="text-overlay">Pozivnica za vencanje</div>
+            </div>
+
+            <!-- Portfolio 3 -->
+            <div class="portfolio-item" onclick="openModal(3)">
+                <img src="images/PLAKATI/POSTER akvarel crtez prirode.jpg" alt="Portfolio 3">
+                <div class="text-overlay">Posteri</div>
+            </div>
+
+            <!-- Portfolio 4 -->
+            <div class="portfolio-item" onclick="openModal(4)">
+                <img src="images/Brutal/brutal streetwear black (2)-min.jpg" alt="Portfolio 4">
+                <div class="text-overlay">Brutal Streetwear Design</div>
+            </div>
+
+            <!-- Portfolio 5 -->
+            <div class="portfolio-item" onclick="openModal(5)">
+                <img src="images/Dahlia/dahlia visit-min.jpg" alt="Portfolio 5">
+                <div class="text-overlay">Cvecara Dahlia</div>
+            </div>
+
+            <!-- Portfolio 6 -->
+            <div class="portfolio-item" onclick="openModal(6)">
+                <img src="images/LOGOAmethyst/AMETHYST1-min.jpg" alt="Portfolio 6">
+                <div class="text-overlay">Logo Amethyst</div>
+            </div>
+
+            <!-- Portfolio 7 -->
+            <div class="portfolio-item" onclick="openModal(7)">
+                <img src="images/KORICAKNJIGE/korica.jpg" alt="Portfolio 7">
+                <div class="text-overlay">Knjiga i solja</div>
+            </div>
+
+            <!-- Portfolio 8 -->
+            <div class="portfolio-item" onclick="openModal(8)">
+                <img src="images/BUKMARKERI/Bookmark_Mockup_1-min.jpg" alt="Portfolio 8">
+                <div class="text-overlay">Bookmaker</div>
+            </div>
+
+            <!-- Portfolio 9 -->
+            <div class="portfolio-item" onclick="openModal(9)">
+                <img src="images/biljkeljubicasto/mokap cvece-min.jpg" alt="Portfolio 9">
+                <div class="text-overlay">Ljubicasto cvece</div>
+            </div>
+
+            <!-- Portfolio 10 -->
+            <div class="portfolio-item" onclick="openModal(10)">
+                <img src="images/zivotinje/majmunZirafa.jpg" alt="Portfolio 10">
+                <div class="text-overlay">Zivotinjice slike</div>
+            </div>
+
+            <!-- Portfolio 11 -->
+            <div class="portfolio-item" onclick="openModal(11)">
+                <img src="images/DIZAJNMAJICE/Tshirt.jpg" alt="Portfolio 11">
+                <div class="text-overlay">Tigar majica</div>
+            </div>
+
+            <!-- Portfolio 12 -->
+            <div class="portfolio-item" onclick="openModal(12)">
+                <img src="images/letnjemajce/T-shirt.jpg" alt="Portfolio 12">
+                <div class="text-overlay">Letnja majica</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Portfolios -->
+    <!-- Modal for Portfolio 1 -->
+    <div class="modal" id="modal1">
+        <span class="close-modal" onclick="closeModal(1)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/banerNANA/дипломски-48-min.jpg" alt="Portfolio 1 Image 1">
+                <img src="images/banerNANA/дипломски-50-min.jpg" alt="Portfolio 1 Image 2">
+                <img src="images/banerNANA/дипломски-54-min.jpg" alt="Portfolio 1 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 2 -->
+    <div class="modal" id="modal2">
+        <span class="close-modal" onclick="closeModal(2)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/MakiAca/ilustracija za planer-min.jpg" alt="Portfolio 2 Image 1">
+                <img src="images/MakiAca/planer-min.jpg" alt="Portfolio 2 Image 2">
+                <img src="images/MakiAca/pozivnice-min.jpg" alt="Portfolio 2 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 3 -->
+    <div class="modal" id="modal3">
+        <span class="close-modal" onclick="closeModal(3)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/PLAKATI/POSTER MLO Kozmeticki salon.jpg" alt="Portfolio 3 Image 1">
+                <img src="images/PLAKATI/POSTER Priroda akvarel.jpg" alt="Portfolio 3 Image 2">
+                <img src="images/PLAKATI/Strikhfest.jpg" alt="Portfolio 3 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 4 -->
+    <div class="modal" id="modal4">
+        <span class="close-modal" onclick="closeModal(4)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/Brutal/brutal streetwear logo metal-min-min.jpg" alt="Portfolio 4 Image 1">
+                <img src="images/Brutal/etiketa mokap-min.jpg" alt="Portfolio 4 Image 2">
+                <img src="images/Brutal/brutal streetwear-min.jpg" alt="Portfolio 4 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 5 -->
+    <div class="modal" id="modal5">
+        <span class="close-modal" onclick="closeModal(5)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/Dahlia/dahlia visit-min.jpg" alt="Portfolio 5 Image 1">
+                <img src="images/Dahlia/Flower-Art-2-min.jpg" alt="Portfolio 5 Image 2">
+                <img src="images/Dahlia/Leather-min.jpg" alt="Portfolio 5 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 6 -->
+    <div class="modal" id="modal6">
+        <span class="close-modal" onclick="closeModal(6)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/LOGOAmethyst/535-min.jpg" alt="Portfolio 6 Image 1">
+                <img src="images/LOGOAmethyst/776-min.jpg" alt="Portfolio 6 Image 2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 7 -->
+    <div class="modal" id="modal7">
+        <span class="close-modal" onclick="closeModal(7)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/KORICAKNJIGE/skica.jpg" alt="Portfolio 7 Image 1">
+                <img src="images/KORICAKNJIGE/solje.jpg" alt="Portfolio 7 Image 2">
+                <img src="images/KORICAKNJIGE/svemir.jpg" alt="Portfolio 7 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 8 -->
+    <div class="modal" id="modal8">
+        <span class="close-modal" onclick="closeModal(8)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/BUKMARKERI/Bookmarkers-min.jpg" alt="Portfolio 8 Image 1">
+                <img src="images/BUKMARKERI/Free Four Notebooks Mockup-min.jpg" alt="Portfolio 8 Image 2">
+                <img src="images/BUKMARKERI/postcard.jpg" alt="Portfolio 8 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 9 -->
+    <div class="modal" id="modal9">
+        <span class="close-modal" onclick="closeModal(9)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/biljkeljubicasto/mokap cvece1-min.jpg" alt="Portfolio 9 Image 1">
+                <img src="images/biljkeljubicasto/mokap cvece2-min.jpg" alt="Portfolio 9 Image 2">
+                <img src="images/biljkeljubicasto/mokap cvece3-min.jpg" alt="Portfolio 9 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 10 -->
+    <div class="modal" id="modal10">
+        <span class="close-modal" onclick="closeModal(10)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/zivotinje/majmun.jpg" alt="Portfolio 10 Image 1">
+                <img src="images/zivotinje/sova1.jpg" alt="Portfolio 10 Image 2">
+                <img src="images/zivotinje/sova2.jpg" alt="Portfolio 10 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 11 -->
+    <div class="modal" id="modal11">
+        <span class="close-modal" onclick="closeModal(11)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/DIZAJNMAJICE/Leather.jpg" alt="Portfolio 11 Image 1">
+                <img src="images/DIZAJNMAJICE/tigar-min.png" alt="Portfolio 11 Image 2">
+                <img src="images/DIZAJNMAJICE/tigar2-min.jpg" alt="Portfolio 11 Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 11 -->
+    <div class="modal" id="modal12">
+        <span class="close-modal" onclick="closeModal(12)">X</span>
+        <div class="modal-content">
+            <div class="image-row">
+                <img src="images/letnjemajce/summer-min.jpg" alt="Portfolio 12 Image 1">
+                <img src="images/letnjemajce/sladoled1-min.jpg" alt="Portfolio 12 Image 2">
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>Dizajn studio Colorama Print 2024.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
