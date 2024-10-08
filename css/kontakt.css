@@ -4,6 +4,7 @@ html, body {
     height: 100%; /* Set the html and body height to 100% */
     margin: 0;
     padding: 0;
+    background-color: orange;
 }
 
 /* Animation for fade-in and slight move up */
