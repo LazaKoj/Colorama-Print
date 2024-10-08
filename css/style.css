@@ -205,6 +205,22 @@ header {
 
     .nav-links.show {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9); 
+        z-index: 999;
+        animation: fadeInUp 0.5s ease-out;
+        opacity: 1; 
+    }
+
+    .no-scroll {
+        overflow: hidden;
     }
 
     .hamburger {
