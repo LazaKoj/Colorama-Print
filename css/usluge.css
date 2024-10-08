@@ -32,6 +32,16 @@ body {
     animation-fill-mode: forwards; 
 }
 
+.services-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #333;
+    width: 100%;
+}
+
 /* Service Columns Styling */
 .service-column {
     width: 30%;
