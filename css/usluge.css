@@ -20,16 +20,16 @@ body {
 .services {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;  
     margin: 0 auto;
     max-width: 1200px;
     background-color: orange; 
-    padding: 40px 20px; 
+    padding: 10px 10px; 
     color: #333;
     text-align: left;
     animation: fadeInUp 1.5s ease-out; 
     opacity: 0;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
 }
 
 /* Service Columns Styling */
@@ -48,6 +48,7 @@ body {
 
 .service-column ul {
     list-style-type: disc;
+    list-style-position: inside;
     line-height: 1.8; 
     padding: 0;
 }
@@ -89,11 +90,17 @@ body {
 
 @media (max-width: 768px) {
     .service-column {
-        width: 100%; 
-        text-align: center; 
+        width: 60%; 
+        text-align: left;
     }
 
     .service-column h2 {
         padding-top: 10px;
     }
+
+    .service-columnul ul {
+        text-align: left;
+        list-style-position: inside;
+    }
+    
 }
