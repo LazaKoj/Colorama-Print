@@ -99,6 +99,15 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .services-title {
+        width: 65%;
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
     .service-column {
         width: 60%; 
         text-align: left;
