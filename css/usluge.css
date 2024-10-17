@@ -19,7 +19,9 @@ body {
 /* Services Section Layout */
 .services {
     display: flex;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    justify-content: center; 
+    gap: 20px; 
     flex-wrap: wrap;  
     margin: 0 auto;
     max-width: 1200px;
@@ -43,8 +45,9 @@ body {
 }
 
 /* Service Columns Styling */
-.service-column {
-    width: 30%;
+.service-column { 
+    text-align: left; 
+    margin: 0 auto; 
 }
 
 .service-column h2 {
