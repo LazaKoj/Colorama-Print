@@ -10,7 +10,7 @@
     align-items: center;
     z-index: 1000;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
     visibility: hidden;
 }
 
@@ -59,7 +59,7 @@
 #preloader.fade-out {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
 @keyframes fadeIn {
