@@ -255,16 +255,33 @@ header {
     }
 
     .section-one {
-        height: 750px;
+        height: auto; 
+        min-height: 750px; 
+        padding-top: 0px; 
+        padding-bottom: 50px;
     }
 
     .section-two {
-        height: 850px;
+        height: auto;
+        min-height: 850px;
+        padding-top: 30px; 
+        padding-bottom: 30px; 
     }
 
     .section-one .text-content,
     .section-two .text-content {
         font-size: 20px;
         padding: 10px;
+    }
+
+    .section-one .text-content {
+        margin-top: 0; 
+        padding-top: 0px; 
+        padding-bottom: 20px; 
+    }
+
+    .section-two .text-content {
+        padding-top: 0px; 
+        padding-bottom: 20px; 
     }
 }

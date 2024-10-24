@@ -1,7 +1,7 @@
 /* Contact Section Styling */
 
 html, body {
-    height: 100%; /* Set the html and body height to 100% */
+    height: 100%; 
     margin: 0;
     padding: 0;
     background-color: orange;
@@ -11,17 +11,17 @@ html, body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px); /* Moves content 30px down */
+        transform: translateY(30px); 
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* Brings content to its original position */
+        transform: translateY(0); 
     }
 }
 
 .contact-title,
 .contact-info {
-    animation: fadeInUp 1.5s ease-out; /* Slight delay for text */
+    animation: fadeInUp 1.5s ease-out; 
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -30,10 +30,10 @@ html, body {
     background-color: orange;
     padding: 50px;
     text-align: center;
-    min-height: 81.6vh; /* Ensure the contact section takes up at least the full viewport height */
+    min-height: 81.6vh; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
+    justify-content: center; 
     box-sizing: border-box; 
 }
 
